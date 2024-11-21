@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: linear-gradient(#34495C,#768491);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #273845;
+    height: 72px;
+    align-items: center;
+   
+
+    .item {
+        margin-left: 32px;
+        margin-right: 32px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .text {
+        font-family: Noto Serif;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn-back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        border: none;
+        background: transparent; 
+        cursor: pointer;
+
+        img {
+            width: 18px; 
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        background: transparent; 
+        cursor: pointer;
+
+        img {
+            width: 34px; 
+            height: 34px;
+            object-fit: contain;
+        }
+    }
+}
+
+.logo-mini {
+    width: 30px;
+}
+
+.trailer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 648px;
+    background-image: url('trailer.png');
+    .btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .btn:hover {
+        filter: brightness(0.7); /* Затемнение на 30% */
+    }
+}
+
+.information {
+    margin-left: 114px;
+    margin-right: 114px;
+    margin-bottom: 20px;
+
+    .name-text {
+        font-family: Noto Serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #FAEBD7;
+       
+    }
+
+    .text {
+        font-family: Noto Serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
+    .text1 {
+        font-family: Noto Serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #DEA10F;
+    }
+
+    .name-container {
+        margin-top: 32px;
+        margin-bottom: 9px;
+    
+    }
+    
+    .description-container {
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .action-container {
+        display: flex; 
+        gap: 24px;
+        align-items: center; 
+    
+        .btn {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    }
+
+    .names-container {
+        display: flex;        
+        flex-direction: column; 
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .photos-container {
+        display: flex;
+        margin-bottom: 14px;
+    }
+
+    .photos-container img {
+        margin-right: -10px; 
+    }
+
+
+    .container {
+        display: flex;
+        gap: 172px;
+    }
+    
+    .left-container {
+        width: 50%;
+    }
+    
+    .title-text {
+        font-family: Noto Serif;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 23px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #FAEBD7;
+    }
+    
+    .title {
+        margin-bottom: 12px;
+    }
+ 
+}
+
+.main-container {
+    margin-bottom: 78px;
+}
+
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 18px; /* Расстояние между 9.6 и звездочками */
+    margin-top: 34px;
+    
+    .small-text {
+        font-family: Noto Serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #ffffff;
+    }
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between; /* Выровнять подписи по левому и правому краям */
+    align-items: center; /* Центрировать вертикально */
+}
+
+
+footer {
+    background-color: #273845;
+    text-align: center;
+    padding: 16px;
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
