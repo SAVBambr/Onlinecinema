@@ -1,0 +1,353 @@
+/* styles.css */
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Noto Serif;
+    color: #333;
+    background: linear-gradient(#34495C,#768491);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #273845;
+    height: 72px;
+    align-items: center;
+
+
+    .item {
+        margin-left: 32px;
+        margin-right: 32px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .text {
+        font-family: Noto Serif;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        img {
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+        }
+    }
+}
+
+
+
+nav a {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: #DEA10F;
+}
+
+
+
+
+
+
+/* Фильтры */
+.filter-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#name-filter {
+    appearance: none; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #273845; 
+    color: #ffffff; 
+    padding: 10px 40px 10px 10px; /* Отступ справа для добавленного шеврона */
+    font-size: 1rem;
+    background-image: url('chevron.svg'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Расположение кастомного шеврона */
+    background-size: 12px; /* Размер шеврона */
+    border: 1px solid #767776
+}
+
+#year-filter {
+    appearance: none; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #273845; 
+    color: #ffffff; 
+    padding: 10px 40px 10px 10px; 
+    font-size: 1rem;
+    background-image: url('chevron.svg'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 12px;
+    border: 1px solid #767776
+}
+
+#country-filter {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #273845;
+    color: #ffffff;
+    padding: 10px 40px 10px 10px;
+    font-size: 1rem;
+    background-image: url('chevron.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    border: 1px solid #767776;
+    transition: border-color 0.3s ease;
+}
+
+#search:focus {
+    border-color: #DEA10F; /* Цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Подсветка при фокусе */
+}
+
+
+.crumbs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 32px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #1F2C3A;
+    border: none;
+    cursor: pointer;
+    color: #FAEBD7;
+}
+
+.tab.active {
+    background-color: #DEA10F;
+    color: #1F2C3A;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.filters select{
+    color: #FAEBD7;
+    background-color: #273845;
+    padding: 8px;
+}
+
+.filters input {
+    color: white;
+    background-color: #273845;
+    padding: 8px;
+}
+
+
+#search {
+    width: 300px; /* Ширина поля */
+    padding: 10px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    border: 1px solid #767776; /* Цвет и толщина границы */
+    outline: none; /* Убирает рамку при фокусе */
+    transition: border-color 0.3s ease; /* Анимация изменения цвета рамки при фокусе */
+
+}
+
+#search:focus {
+    border-color: #DEA10F; /* Цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Подсветка при фокусе */
+}
+
+
+#search-btn {
+    padding: 8px 15px;
+    background-color: #f0c040;
+    cursor: pointer;
+}
+
+.active-filters {
+    margin-top: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.filter-tags span {
+    background-color: #1F2C3A;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+}
+
+.remove-filter {
+    background: none;
+    border: none;
+    color: #ccc;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.clear-filters {
+    margin-top: 10px;
+    background-color: #DEA10F;
+    color: #1F2C3A;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.clear-icon {
+    margin-right: 8px;
+}
+
+#search-btn {
+    background-color: #DEA10F; /* Основной цвет фона */
+    color: #1F2C3A; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 8px 18px; /* Отступы */
+    font-size: 18px; /* Размер шрифта */
+    cursor: pointer; /* Курсор "рука" при наведении */
+}
+
+.clear-filters {
+    background-color: #DEA10F; /* Цвет фона, например, красный */
+    color: #1F2C3A; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 8px 16px; /* Внутренние отступы */
+    font-size: 14px; /* Размер шрифта */
+    cursor: pointer; /* Курсор в виде руки */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+
+
+
+/* Карточки фильмов */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.movie-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card img:hover {
+    filter: brightness(0.7); /* Затемнение на 30% */
+}
+
+.carousel {
+
+    display: flex;
+    gap: 1rem;
+    margin-top: 32px;
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+.movie-card {
+    padding: 1rem;
+    min-width: 150px;
+    cursor: pointer;
+    text-align: left;
+}
+.movie-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.movie-card span {
+    font-size: 1rem;
+    color: #DEA10F;
+    margin-bottom: 2px;
+}
+
+.movie-card p {
+    font-size: 1.25rem;
+    color: #fff;
+    max-width: 200px;
+    margin-bottom: 2px;
+}
+
+
+
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #DEA10F;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+footer {
+    background-color: #273845;
+    text-align: center;
+    padding: 16px;
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}

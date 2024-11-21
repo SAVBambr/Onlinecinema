@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Drama</title>
+    <link rel="stylesheet" href="stylesCatalog.css">
+</head>
+<body>
+<div class="header">
+    <div class="item">
+        <div class="logo-container">
+            <img class="logo-mini" src="src/logo.svg">
+            <span class="text">Eastern Drama</span>
+        </div>
+    </div>
+    <div class="item">
+        <button class="btn">
+            <img src="src/news.svg">
+        </button>
+        <button class="btn">
+            <img src="src/profile.svg">
+        </button>
+    </div>
+</div>
+
+    <main id="catalog">
+        <div class="crumbs">
+            <nav>
+                <a href="кинотеатр.html">Главная / Каталог</a>
+            </nav>
+        </div>
+        <section class="filter-section">
+            <div class="tabs">
+                <button class="tab active">Фильмы</button>
+                <button class="tab">Сериалы</button>
+            </div>
+            <div class="filters">
+                <select id="country-filter">
+                    <option>Страна</option>
+                    <option>Южная Корея</option>
+                    <option>Китай</option>
+                    <option>Япония</option>
+                    <option>Индия</option>
+                    <option>Турция</option>
+                    <option>ОАЭ</option>
+                    <option>Иран</option>
+                    <option>Египет</option>
+                    <option>Израиль</option>
+                </select>
+                <select id="year-filter">
+                    <option>Год</option>
+                    <option>2014-2024</option>
+                    <option>2004-2014</option>
+                    <option>1994-2004</option>
+                    <option>1984-2004</option>
+                    <option>1974-1984</option>
+                </select>
+                <select id="name-filter">
+                    <option>По названию</option>
+                    <option>А-Я</option>
+                    <option>Я-А</option>
+                </select>
+                <input type="text" placeholder="Поиск" id="search">
+                <button id="search-btn">Найти</button>
+            </div>
+            <div class="active-filters">
+                <p>Активные фильтры:</p>
+                <div class="filter-tags">
+                    <span>Южная Корея <button class="remove-filter">✕</button></span>
+                    <span>2014-2024 <button class="remove-filter">✕</button></span>
+                    <span>А-Я <button class="remove-filter">✕</button></span>
+                </div>
+                <button class="clear-filters"><span class="clear-icon">✕</span> Сбросить фильтры</button>
+            </div>
+        </section>
+        
+        <section class="carousel">
+            <div class="movie-card">
+                <img src="постеры/в-паутине.png" alt="В паутине">
+                <p>В паутине</p>
+                <span>2023 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/револьвер.png" alt="Револьвер">
+                <p>Револьвер</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/фабрика-троллей.png" alt="Револьвер">
+                <p>Фабрика троллей</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/мертвец.png" alt="Револьвер">
+                <p>Мертвец</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/страна-чудес.png" alt="Револьвер">
+                <p>Страна чудес</p>
+                <span>2024 • 18+</span>
+            </div>
+        </section>
+        
+        <section class="carousel">
+        <div class="movie-card">
+            <img src="постеры/планета-зверей.png" alt="В паутине">
+            <p>Планета Зверей</p>
+            <span>2018 • 16+</span>
+        </div>
+        <div class="movie-card">
+            <img src="постеры/гений-математики.png" alt="Револьвер">
+            <p>Гений математики</p>
+            <span>2022 • 18+</span>
+        </div>
+        <div class="movie-card">
+            <img src="постеры/паразиты.png" alt="Револьвер">
+            <p>Паразиты</p>
+            <span>2019 • 18+</span>
+        </div>
+        <div class="movie-card">
+            <img src="постеры/землетрясение.png" alt="Револьвер">
+            <p>Землетрясение</p>
+            <span>2010 • 18+</span>
+        </div>
+        <div class="movie-card">
+            <img src="постеры/отпуск-по-корейски.png" alt="Револьвер">
+            <p>Отпуск по-корейски</p>
+            <span>2022 • 18+</span>
+        </div>
+    </section>
+        
+        <section class="carousel">
+            <div class="movie-card">
+                <img src="постеры/в-паутине.png" alt="В паутине">
+                <p>В паутине</p>
+                <span>2023 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/револьвер.png" alt="Револьвер">
+                <p>Револьвер</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/фабрика-троллей.png" alt="Револьвер">
+                <p>Фабрика троллей</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/мертвец.png" alt="Револьвер">
+                <p>Мертвец</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/страна-чудес.png" alt="Револьвер">
+                <p>Страна чудес</p>
+                <span>2024 • 18+</span>
+            </div>
+        </section>
+        
+        <section class="carousel">
+            <div class="movie-card">
+                <img src="постеры/в-паутине.png" alt="В паутине">
+                <p>В паутине</p>
+                <span>2023 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/револьвер.png" alt="Револьвер">
+                <p>Револьвер</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/фабрика-троллей.png" alt="Револьвер">
+                <p>Фабрика троллей</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/мертвец.png" alt="Револьвер">
+                <p>Мертвец</p>
+                <span>2024 • 18+</span>
+            </div>
+            <div class="movie-card">
+                <img src="постеры/страна-чудес.png" alt="Револьвер">
+                <p>Страна чудес</p>
+                <span>2024 • 18+</span>
+            </div>
+        </section>
+
+        <button class="load-more">Показать еще</button>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Email: easterndrama@gmail.com</p>
+            <p>Phone: +7 915 328 39 43</p>
+            <p>&copy; 2024 Eastern Drama.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
